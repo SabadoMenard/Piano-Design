@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    /* background-color: rgb(70, 86, 86); */
+    background-image: url(images/p4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0 , 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+#nav{
+	width: 100%;
+	padding: 25px;
+	margin: 0px auto 0px auto;
+	border-top: 3px solid #bfb9b9;
+	border-bottom: 1px solid #000;
+    background-color: rgb(142, 140, 138);
+    z-index: 50;
+    display: flex;
+    justify-content:center;
+    align-items: center;	
+}
+#nav:hover{
+    filter: invert(1);
+    transform: rotate(1);
+}
+li {
+    display: inline;
+	margin: 0px 3px 0px 50px;
+	font-weight: 1000;
+    /* margin-left: 90px; */
+    text-align:center;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+#container{
+    /* background-color: #000; */
+    width:50%;
+    height: 30%;
+    margin: auto;
+    margin-top: 20px;
+    border: 10px solid;
+    border-style: ridge;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+#container div:hover{
+    filter: invert(1);
+    transform: rotate(1);
+
+}
+#piano{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+#piano img{
+    width: 0 auto;
+    height: 0 auto;
+    border: 10px solid  #817e8c;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px rgb(114, 194, 140);
+    cursor: pointer;
+    margin:10px;
+    transition: 400ms;
+}
+#piano img:hover{
+    filter: brightness(2);
+    transform: scale(1.03);
+}
+p {
+	/* text-align: center; */
+	width: 1000px; 
+	margin: 50px auto 50px auto; 
+	font-size: 2em;
+	padding-left: 50px;
+	font-weight: bolder;
+	color: #050505;
+    background-color: #bfb9b9;
+    border-radius: 20px;
+    border:10px solid;
+  
+  
+}
+p:hover {
+        filter: brightness(3);
+        transform:perspective(15)
+}
+
+#container div{
+    width: 20%;
+    height: 95px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    font-size:5em ;
+    font-stretch: expanded;
+    color:rgb(9, 9, 9);
+    /* flex: 1 0 27vh; */
+
+}
+
+@media  (max-width:1000px) {
+    body {
+        height: 100%;
+        width:0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav{
+        flex-direction: flex;
+    }
+    #container{
+       
+        
+        display: flex;
+    }
+    
+}
